@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+ul {
+    list-style: none;
+    margin-right: 50px;
+}
+
+header {
+    background-color: rgb(88, 29, 143);
+    box-shadow: 0px 3px 10px #000000;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul a li {
+    border-bottom: 2px solid transparent;
+}
+
+nav ul a li:hover {
+    border-bottom: 2px solid white;
+    transition: 0.4s ease-in;
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: 600;
+    margin-left: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.hero-section {
+    background-image: url("https://www.wallpapertip.com/wmimgs/51-519312_purple-background.jpg");
+    height: 100vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.hero-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-section .container h1 {
+    font-size: 100px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.musicsec {
+    background-color: rgb(54, 5, 101);
+
+}
+
+.musicsec .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.ind-music-img {
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+
+.musicsec .container h2 {
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+.primary-btn {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(197, 105, 255);
+    border: none;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: rgb(221, 176, 251);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.abt-music {
+    padding-top: 450px;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.abtmusicp {
+
+    width: 80%;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.abt-music h2 {
+    color: rgb(255, 255, 255);
+    background-color: blueviolet;
+    box-shadow: 0px 0px 10px 10px blueviolet;
+    font-family: 'Poppins', sans-serif;
+
+    width: 50%;
+
+
+}
+
+.sec-btn {
+    padding: 12px;
+    background-color: rgb(122, 39, 199);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    border: none;
+
+
+}
+
+.sec-btn:hover {
+    background-color: rgb(221, 176, 251);
+    transition: 0.4s;
+    animation: sec-btn 0.9s both;
+
+}
+
+@keyframes sec-btn {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+.video {
+    background-image: url("https://github.com/anshuopinion/10-Practice-Project-Html-CSS/blob/Project-6-Music-Website/Project%206/images/video.png?raw=true");
+    min-height: 600px;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+
+}
+
+.video .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+
+.video .container h1 {
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.giftcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.giftcard .giftcont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 40%;
+}
+
+.giftcard .giftcont h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+.three-btn {
+    background-color: blueviolet;
+    border-radius: 8px;
+    padding: 12px;
+    width: 75px;
+    border: none;
+    color: white;
+    margin-top: -20px;
+
+}
+
+
+.three-btn:hover {
+    background-color: rgb(162, 112, 209);
+    transition: 0.4s;
+    cursor: pointer;
+    animation: three-btn 0.4s ease-in-out both;
+}
+
+.footer-upper {
+    margin-top: 50px;
+    background-color: rgb(88, 29, 143);
+    color: white;
+    padding: 10px;
+}
+
+.footer-upper .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-upper .container .footer-links {
+    padding: 10px;
+}
+
+.footer-upper .container .footer-links h4 {
+    font-size: 17px;
+    text-decoration: underline;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 7px;
+
+}
+
+.footer-lower {
+    text-align: center;
+    background-color: blueviolet;
+}
+
+#vk {
+    font-size: 200px;
+    font-weight: 700px;
+    margin-bottom: -800px;
+    color: rgb(108, 35, 177);
+    text-shadow: 10px 10px 20px#000000;
+}
+
+
+@keyframes three-btn {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60% {
+      transform: translateX(10px);
+    }
+    80% {
+      transform: translateX(8px);
+    }
+    90% {
+      transform: translateX(-8px);
+    }
+  }
